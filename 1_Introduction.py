@@ -51,7 +51,7 @@ st.markdown(
     """
 )
 
-fp = r"C:\Users\kervi\Documents\DataScientest - PROJETS\00 PROJET WORLD HAPPINESS REPORT\projet_world_happiness_pour_machine_learning.csv"
+fp = "projet_world_happiness_pour_machine_learning.csv"
 df = pd.read_csv(fp)
 
 st.dataframe(df)
