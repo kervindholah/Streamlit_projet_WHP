@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 
-fp = r"C:\Users\kervi\Documents\DataScientest - PROJETS\00 PROJET WORLD HAPPINESS REPORT\projet_world_happiness_concatenation.csv"
+fp = "projet_world_happiness_concatenation.csv"
 df = pd.read_csv(fp)
 
 st.title("Étude des corrélations entre les différentes variables")
