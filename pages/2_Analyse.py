@@ -23,7 +23,7 @@ st.markdown(
     """
 )
 
-fp = r"C:\Users\kervi\Documents\DataScientest - PROJETS\00 PROJET WORLD HAPPINESS REPORT\projet_world_happiness_concatenation.csv"
+fp = "projet_world_happiness_concatenation.csv"
 df = pd.read_csv(fp)
 
 df_mean_score_per_year = df.groupby("year", as_index=False)["Life_Ladder"].mean()
