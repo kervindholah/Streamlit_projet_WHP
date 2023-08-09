@@ -20,10 +20,10 @@ from sklearn.model_selection import GridSearchCV
 st.title("Application de l’algorithme")
 
 
-model_path = r"C:\Users\kervi\Documents\DataScientest - PROJETS\00 PROJET WORLD HAPPINESS REPORT\GDBregressor.joblib"
+model_path = "GDBregressor.joblib"
 GBR_model = load(model_path)
 
-fp = r"C:\Users\kervi\Documents\DataScientest - PROJETS\00 PROJET WORLD HAPPINESS REPORT\projet_world_happiness_pour_machine_learning.csv"
+fp = "projet_world_happiness_pour_machine_learning.csv"
 df = pd.read_csv(fp)
 
 # Style personnalisé pour la colonne "Life_Ladder"
