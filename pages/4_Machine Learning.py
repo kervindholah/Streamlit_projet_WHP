@@ -6,7 +6,7 @@ import seaborn as sns
 import plotly.express as px
 from PIL import Image
 
-fp = r"C:\Users\kervi\Documents\DataScientest - PROJETS\00 PROJET WORLD HAPPINESS REPORT\projet_world_happiness_pour_machine_learning.csv"
+fp = "projet_world_happiness_pour_machine_learning.csv"
 df = pd.read_csv(fp)
 
 st.title("Choix du modèle de Machine Learning ")
@@ -72,23 +72,23 @@ st.table(resultats1)
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    image = Image.open(r"C:\Users\kervi\OneDrive\Bureau\photos pour streamlit\learning curve - linear.png")
+    image = Image.open("learning curve - linear.png")
     st.image(image, width=250)
 with col2:
-    image2 = Image.open(r"C:\Users\kervi\OneDrive\Bureau\photos pour streamlit\learning curve - lasso.png")
+    image2 = Image.open("learning curve - lasso.png")
     st.image(image2, width=250)
 with col3:
-    image3 = Image.open(r"C:\Users\kervi\OneDrive\Bureau\photos pour streamlit\learning curve - ridge.png")
+    image3 = Image.open("learning curve - ridge.png")
     st.image(image3, width=250)
 
 
 
 col1, col2 = st.columns(2)
 with col1:
-    image4 = Image.open(r"C:\Users\kervi\OneDrive\Bureau\photos pour streamlit\learning curve - decision.png")
+    image4 = Image.open("learning curve - decision.png")
     st.image(image4, width=250)
 with col2:
-    image5 = Image.open(r"C:\Users\kervi\OneDrive\Bureau\photos pour streamlit\learning curve - random.png")
+    image5 = Image.open("learning curve - random.png")
     st.image(image5, width=250)
 
 
@@ -159,7 +159,7 @@ st.markdown(
 
 
 
-image_feature_importance = Image.open(r"C:\Users\kervi\OneDrive\Bureau\photos pour streamlit\feature importance.png")
+image_feature_importance = Image.open("feature importance.png")
 st.image(image_feature_importance)
 
 
@@ -185,7 +185,7 @@ st.markdown(
     et le Linear regression, les performances chutes à partir d'un training size de 1200)
     """)
 
-image_learning_curve_ridge2 = Image.open(r"C:\Users\kervi\OneDrive\Bureau\photos pour streamlit\learning curve - ridge2.png")
+image_learning_curve_ridge2 = Image.open("learning curve - ridge2.png")
 st.image(image_learning_curve_ridge2)
 
 st.markdown(
@@ -211,13 +211,13 @@ st.table(resultats_data2)
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    image_bagging = Image.open(r"C:\Users\kervi\OneDrive\Bureau\photos pour streamlit\learning curve - baggingregressor.png")
+    image_bagging = Image.open("learning curve - baggingregressor.png")
     st.image(image_bagging, width=250)
 with col2:
-    image_gradient = Image.open(r"C:\Users\kervi\OneDrive\Bureau\photos pour streamlit\learning curve - gradientboosting.png")
+    image_gradient = Image.open("learning curve - gradientboosting.png")
     st.image(image_gradient, width=250)
 with col3:
-    image_ada = Image.open(r"C:\Users\kervi\OneDrive\Bureau\photos pour streamlit\learning curve - adaboost.png")
+    image_ada = Image.open("learning curve - adaboost.png")
     st.image(image_ada, width=250)
 
 
@@ -253,14 +253,14 @@ data3 = {
 resultats_data3 = pd.DataFrame(data3)
 st.table(resultats_data3)
 
-image_learning_curve_gradient_bestparams = Image.open(r"C:\Users\kervi\OneDrive\Bureau\photos pour streamlit\learning curve - gradientboosting_bestparams.png")
+image_learning_curve_gradient_bestparams = Image.open("learning curve - gradientboosting_bestparams.png")
 st.image(image_learning_curve_gradient_bestparams, width=500)
 
 st.markdown(
     """
     ##### Feature Importance
     """)
-image_feature_importance2 = Image.open(r"C:\Users\kervi\OneDrive\Bureau\photos pour streamlit\feature importance2.png")
+image_feature_importance2 = Image.open("feature importance2.png")
 st.image(image_feature_importance2)
 
 
