@@ -9,7 +9,7 @@ st.title("Analyse exploratoire et datavisualisation")
 
 st.markdown(
     """
-    #### La variable cible : "Liffe_Ladder" ou "score du bonheur"
+    #### La variable cible : "Life_Ladder" ou "score du bonheur"
     Le dataset contient les scores du bonheur de 2005 à 2021. La répartition géographique est sur 10 régions avec 166 pays au total.
 
     Les 166 pays ne sont pas présents sur toutes les années. Concernant les régions, 7 régions sont représentées en 2005 puis à partir de 
