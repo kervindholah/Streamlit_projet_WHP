@@ -49,7 +49,7 @@ for country in selected_countries:
     color_map[country] = px.colors.qualitative.Set1[len(color_map) % len(px.colors.qualitative.Set1)]
 # Créer le graphique interactif avec Plotly Express
 fig = px.line(filtered_df, x="year", y="Life_Ladder", color="Country_name", color_discrete_map=color_map)
-fig.add_trace(px.line(df_mean_score_per_year, x="year", y="Life_Ladder").data[0])  # Ajouter la courbe mondiale
+fig.add_trace(px.line(df_mean_score_per_year, x="year", y="Life_Ladder", name="Moyenne mondiale").data[0])  # Ajouter la courbe mondiale
 fig.update_layout(title_text="Evolution des scores du bonheur de 2005 à 2021", width=800)
 st.plotly_chart(fig)
 
